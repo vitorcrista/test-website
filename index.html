@@ -1,10 +1,244 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>RECUP</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <div class="secondary-menu">
+                <div class="email-link">
+                    <span class="email-label">Email</span>
+                    <a href="mailto:geral@formula-humana.pt">geral@recup.pt</a>
+                </div>
+                <div class="phone-number-link">
+                    <span class="contact-label">Contactos</span>
+                    <a href="tel:+351 914561537">+351 914561537</a>
+                    <span>|</span>
+                    <a href="tel:+351 936953046">+351 936953046</a>
+                </div>
+            </div>
+
+            <div class="primary-menu">
+                <a href="index.html">
+                    <img src="assets/img/logo_dark.png" alt="logo" />
+                </a>
+
+                <!-- primary nav -->
+                <div class="primary-nav-items hidden">
+                    <a href="about.html">Quem somos</a>
+                    <a href="index.html#services">Serviços</a>
+                    <a href="contact.html">Contactos</a>
+                </div>
+
+                <div class="mobile-icon">
+                    <button class="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="mobile-menu hidden">
+                <a href="about.html">Quem somos</a>
+                <a href="index.html#services">Serviços</a>
+                <a href="contact.html">Contactos</a>
+                <a href="https://www.linkedin.com/company/f%C3%B3rmula-humana" class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 5 1036 990">
+                        <path
+                            d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="hero-section">
+            <div class="hero-content">
+                <img class="logo-on-hero" src="./assets/img/logo_white.png" alt="" />
+
+                <span class="slogan">“Somos o alfaiate num mundo de pronto-a-vestir”</span>
+                <span class="company-core-bus">Serviços de recursos humanos à sua medida</span>
+                <a href="contact.html">Contacte-nos</a>
+            </div>
+        </div>
+
+        <div class="services-section">
+            <div class="service-title">
+                <h1 id="services">O produto</h1>
+                <div class="service-line"></div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="./assets/img/recrutamento.png" alt="recrutamento" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>Recrutamento & <br />Seleção</h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            Através da pesquisa direta (headhunting),
+                            encontramos os melhores talentos, ajustados às
+                            necessidades dos nossos clientes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="./assets/img/assessment.png" alt="assessment" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>Assessment</h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            Vasta experiência na Avaliação Psicológica, em
+                            contexto de processos de seleção e de progressão
+                            de carreira. Recorremos a uma abordagem
+                            holística, podendo esta ser individual e ou em
+                            grupo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="./assets/img/assessoria.png" alt="assessoria" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>Assessoria em <br />Concursos Públicos</h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            Somos especialistas na Assessoria a Concursos
+                            Públicos, sobretudo na fase de Avaliação
+                            Psicológica e de Entrevista de Avaliação de
+                            Competências.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="./assets/img/formacao.png" alt="formacao" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>Formação</h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            Realizamos sessões formativas, com enfoque no desenvolvimento de competências
+                            comportamentais, ajustadas às necessidades do cliente e cultura da organização.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="./assets/img/team.png" alt="team" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>Team Building</h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            Desenvolvemos dinâmicas que visam potenciar a coesão grupal e a relação interpessoal, assim
+                            como potenciar o talento individual.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-holder">
+                        <img class="card__image" src="./assets/img/avaliacao.png" alt="avaliacao" />
+                    </div>
+                    <div class="card-title">
+                        <a href="#" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2>Avaliação do clima organizacional</h2>
+                    </div>
+                    <div class="card-flap flap1">
+                        <div class="card-description">
+                            Propomos atividades que têm como finalidade avaliar e analisar os níveis de satisfação,
+                            motivação e aspetos a melhorar, entre outros fatores adequados à realidade do
+                            cliente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="site-links">
+            <h1>Site Links</h1>
+            <div class="site-link-items">
+                <a href="about.html">Quem somos</a>
+                <a href="index.html#services">Serviços</a>
+                <a href="contact.html">Contactos</a>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <h1>Contactos</h1>
+
+            <div class="phone">
+                <span>Telemóvel:</span>
+                <a href="tel:+351 1234">+351 1234</a>
+                <a href="tel:+351 1234">+351 1234</a>
+            </div>
+
+            <div>
+                <span>Email:</span>
+                <a href="mailto:geral@formula-humana.pt">geral@recup.pt</a>
+            </div>
+        </div>
+
+        <div class="outros-links">
+            <h1>Outros links</h1>
+            <a class="livro" href="https://www.livroreclamacoes.pt/inicio"><img src="./assets/img/livro.png"
+                    alt="" /></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <span>Recup &#174; 2024</span>
+    </div>
+</body>
+<script src="./assets/js/responsive-menu.js"></script>
+<script src="./assets/js/service-card.js"></script>
+
 </html>
