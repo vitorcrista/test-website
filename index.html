@@ -1,244 +1,357 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>RECUP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCup Tech</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
-    <header>
-        <nav class="header">
-            <div class="secondary-menu">
-                <div class="email-link">
-                    <span class="email-label">Email</span>
-                    <a href="mailto:geral@formula-humana.pt">geral@recup.pt</a>
-                </div>
-                <div class="phone-number-link">
-                    <span class="contact-label">Contactos</span>
-                    <a href="tel:+351 914561537">+351 914561537</a>
-                    <span>|</span>
-                    <a href="tel:+351 936953046">+351 936953046</a>
-                </div>
-            </div>
+<body id="home">
 
-            <div class="primary-menu">
-                <a href="index.html">
-                    <img src="assets/img/logo_dark.png" alt="logo" />
-                </a>
-
-                <!-- primary nav -->
-                <div class="primary-nav-items hidden">
-                    <a href="about.html">Quem somos</a>
-                    <a href="index.html#services">Serviços</a>
-                    <a href="contact.html">Contactos</a>
-                </div>
-
-                <div class="mobile-icon">
-                    <button class="mobile-menu-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
-                </div>
-            </div>
+                    <!-- <h3 style="color: white;">Recup Tech</h3>-->
+                    <a class="navbar-brand" href="index.html"><img style="width: 250px;" src="images/logo.png"
+                            alt="logo"></a>
 
-            <!-- mobile menu -->
-            <div class="mobile-menu hidden">
-                <a href="about.html">Quem somos</a>
-                <a href="index.html#services">Serviços</a>
-                <a href="contact.html">Contactos</a>
-                <a href="https://www.linkedin.com/company/f%C3%B3rmula-humana" class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 5 1036 990">
-                        <path
-                            d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z" />
-                    </svg>
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <div class="hero-section">
-            <div class="hero-content">
-                <img class="logo-on-hero" src="./assets/img/logo_white.png" alt="" />
-
-                <span class="slogan">“Somos o alfaiate num mundo de pronto-a-vestir”</span>
-                <span class="company-core-bus">Serviços de recursos humanos à sua medida</span>
-                <a href="contact.html">Contacte-nos</a>
-            </div>
-        </div>
-
-        <div class="services-section">
-            <div class="service-title">
-                <h1 id="services">O produto</h1>
-                <div class="service-line"></div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="./assets/img/recrutamento.png" alt="recrutamento" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>Recrutamento & <br />Seleção</h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Através da pesquisa direta (headhunting),
-                            encontramos os melhores talentos, ajustados às
-                            necessidades dos nossos clientes.
-                        </div>
-                    </div>
                 </div>
 
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="./assets/img/assessment.png" alt="assessment" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>Assessment</h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Vasta experiência na Avaliação Psicológica, em
-                            contexto de processos de seleção e de progressão
-                            de carreira. Recorremos a uma abordagem
-                            holística, podendo esta ser individual e ou em
-                            grupo.
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Início</a></li>
+                        <li class="scroll"><a href="#about">Sobre Nós</a></li>
+                        <li class="scroll"><a href="#services">Produto</a></li>
+                        <li class="scroll"><a href="#our-team">Equipa</a></li>
+                        <li class="scroll"><a href="#contact-us">Contactos</a></li>
+                    </ul>
                 </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
 
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="./assets/img/assessoria.png" alt="assessoria" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>Assessoria em <br />Concursos Públicos</h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Somos especialistas na Assessoria a Concursos
-                            Públicos, sobretudo na fase de Avaliação
-                            Psicológica e de Entrevista de Avaliação de
-                            Competências.
-                        </div>
-                    </div>
-                </div>
+    <section id="hero-banner">
+        <div class="banner-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="qwerty">
 
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="./assets/img/formacao.png" alt="formacao" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>Formação</h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Realizamos sessões formativas, com enfoque no desenvolvimento de competências
-                            comportamentais, ajustadas às necessidades do cliente e cultura da organização.
-                        </div>
-                    </div>
-                </div>
+                        <!-- <h2>RECUP TECH</h2> -->
+                        <img src="images/ddddd.png" alt="logo-banner">
+                        <p>Compromisso verde, uma escolha consciente. A nossa máquina, uma solução eficiente.</p>
+                        <a class="btn btn-primary black btn-lg" href="#about">Saber Mais</a>
 
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="./assets/img/team.png" alt="team" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>Team Building</h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Desenvolvemos dinâmicas que visam potenciar a coesão grupal e a relação interpessoal, assim
-                            como potenciar o talento individual.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__image-holder">
-                        <img class="card__image" src="./assets/img/avaliacao.png" alt="avaliacao" />
-                    </div>
-                    <div class="card-title">
-                        <a href="#" class="toggle-info btn">
-                            <span class="left"></span>
-                            <span class="right"></span>
-                        </a>
-                        <h2>Avaliação do clima organizacional</h2>
-                    </div>
-                    <div class="card-flap flap1">
-                        <div class="card-description">
-                            Propomos atividades que têm como finalidade avaliar e analisar os níveis de satisfação,
-                            motivação e aspetos a melhorar, entre outros fatores adequados à realidade do
-                            cliente.
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section><!--/#main-slider-->
 
-    <div class="footer">
-        <div class="site-links">
-            <h1>Site Links</h1>
-            <div class="site-link-items">
-                <a href="about.html">Quem somos</a>
-                <a href="index.html#services">Serviços</a>
-                <a href="contact.html">Contactos</a>
-            </div>
-        </div>
+    <section id="about">
+        <div class="container">
 
-        <div class="contacts">
-            <h1>Contactos</h1>
-
-            <div class="phone">
-                <span>Telemóvel:</span>
-                <a href="tel:+351 1234">+351 1234</a>
-                <a href="tel:+351 1234">+351 1234</a>
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Sobre Nós</h2>
+                <p class="wow fadeInDown">Contamos com uma equipa de quatro elementos da Licenciatura em Engenharia e
+                    Gestão Industrial, do Instituto Superior de Engenharia do Porto.</p>
             </div>
 
-            <div>
-                <span>Email:</span>
-                <a href="mailto:geral@formula-humana.pt">geral@recup.pt</a>
+            <div class="row testing">
+                <div class="col-sm-6 wow fadeInLeft d-flex align-items-center justify-content-center">
+                    <img class="img-responsive" src="images/about.png" alt="">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">A Nossa Empresa</h3>
+                    <p>Somos uma empresa portuguesa dedicada à projeção e conceção de máquinas de recolha de copos de
+                        plástico, permitindo a sua reutilização.
+                    </p>
+
+                    <p>
+                    <h4>Missão</h4>Criação de um mundo mais sustentável, permitindo a reutilização de
+                    copos de plástico, nos
+                    festivais e eventos, dotando os clientes de artigos inovadores e eficazes, capazes de reduzir o
+                    impacto ambiental e promover a economia circular.
+                    </p>
+
+                    <p>
+                    <h4>Visão</h4>Pretendemos posicionar a ReCup Tech® como líder global na reutilização
+                    de copos de
+                    plástico.</p>
+
+                    <p>
+                    <h4>Valores</h4>
+                    <li><strong>Sustentabilidade:</strong> O nosso foco são soluções sustentáveis que promovam a
+                        minimização do
+                        desperdício</li>
+                    <li><strong>Inovação:</strong> Num mundo em constante mudança, é primordial o acompanhamento das
+                        megatendências do
+                        mercado para satisfazer o cliente o melhor possível</li>
+                    <li><strong>Qualidade:</strong> O nosso objetivo é alcançar a excelência em todas as etapas de
+                        conceção do nosso
+                        produto</li>
+                    <li><strong>Colaboração:</strong> Valorizamos parcerias e colaborações com outras organizações,
+                        que partilham o mesmo
+                        objetivo sustentável que a ReCup Tech®</li>
+                    </p>
+
+                    <a class="btn btn-primary white" href="#contact">Contacte-nos</a>
+
+                </div>
             </div>
         </div>
+    </section><!--/#about-->
 
-        <div class="outros-links">
-            <h1>Outros links</h1>
-            <a class="livro" href="https://www.livroreclamacoes.pt/inicio"><img src="./assets/img/livro.png"
-                    alt="" /></a>
+
+    <section id="services">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">O Nosso Produto</h2>
+                <p class="wow fadeInDown">Máquina de recolha de copos para posterior reutilização.</p>
+            </div>
+
+            <div class="row">
+                <div class="">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides ">
+                            <img src="/images/maquina/3b.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides ">
+                            <img src="/images/maquina/4b.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides ">
+                            <img src="/images/maquina/1b.png" style="width:100%">
+                        </div>
+                        <div class="mySlides ">
+                            <img src="/images/maquina/2b.png" style="width:100%">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+
+                <div class="features wow">
+                    <div class="fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="media-body">
+                                <h4 class="media-heading">Características físicas</h4>
+                                <p>Máquina com 1.8 x 0.8 x 0.8 m e 132 quilogramas, facilitando o seu transporte para os
+                                    festivais e eventos.</p>
+                                <p>Construção em aço galvanizado, um tipo de aço que passa por um processo de
+                                    revestimento com zinco, assegurando assim a proteção contra a corrosão, aumentando a
+                                    sua durabilidade.</p>
+                                <p>O processo de galvanização do aço não envolve o uso de substâncias tóxicas ou
+                                    prejudiciais ao meio ambiente, e o zinco é um material reciclável, o que faz do aço
+                                    galvanizado sustentável.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="media-body">
+                                <h4 class="media-heading">Funcionalidades e Capacidade</h4>
+                                <p>Máquina dotada de um sistema de validação dos copos, um fator distintivo no
+                                    mercado, fabricado por nós, para garantir que o copo se encontra íntegro e não
+                                    existem fraudes.</p>
+                                <p>Equipada com sensor NFC para receber uma recompensa monetária por ter reciclado o
+                                    seu copo. Prezamos a sua segurança, pelo que não permitimos reembolso em cartão ou
+                                    monetário.</p>
+                                <p>Possui um display que providencia as instruções necessárias ao processo de
+                                    reciclagem do copo, e ainda informação sobre quantos copos já foram reciclados</p>
+                                <p>Capacidade para 430 copos.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="media-body">
+                                <h4 class="media-heading">Personalização</h4>
+                                <p>Personalizamos a máquina ao seu gosto, a nível estético.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                </div>
+
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;" class="section-title wow fadeInDown">A Nossa Equipa</h2>
+            </div>
+
+
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Adriana Gomes</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/02.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Ana Peixoto</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/03.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Augusto Silva</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/04.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Tânia Silva</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section><!--/#our-team-->
 
-    <div class="copyright">
-        <span>Recup &#174; 2024</span>
-    </div>
+    <section id="contact-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Contacte-nos</h2>
+            </div>
+        </div>
+    </section><!--/#contact-us-->
+
+
+    <section id="contact">
+
+        <div class="container">
+            <div class="container contact-info">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="contact-form">
+                            <h3>Informações de Contacto</h3>
+                            <address>
+                                <strong>ReCup Tech, Lda.</strong><br>
+                                Rua Engenheiro Frederico Ulrich 3210, loja 77<br>
+                                4470-605 Maia, Porto, Portugal<br>
+                            </address>
+
+                            <address>
+                                <strong>Email:</strong><br>
+                                geral.recuptech@gmail.com
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <div class="contact-form">
+
+                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Assunto"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Mensagem"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary white">Enviar mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2024 ReCup Tech
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="https://www.instagram.com/recuptech/"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/custom-scripts.js"></script>
 </body>
-<script src="./assets/js/responsive-menu.js"></script>
-<script src="./assets/js/service-card.js"></script>
 
 </html>
